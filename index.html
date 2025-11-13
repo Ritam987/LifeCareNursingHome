@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+    <title>Life Care Nursing Home Muchipara - Best Healthcare in Durgapur</title>
+    <meta name="description" content="Life Care Nursing Home Muchipara offers 24/7 emergency care, expert doctors, modern facilities in Durgapur. Book appointments online.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="emergency-bar" role="region" aria-label="Emergency Alert">
+            <div class="emergency-bar__content">
+                <span class="emergency-bar__label">🚨 Emergency 24/7:</span>
+                <a class="emergency-bar__number" href="tel:9002058828" aria-label="Call Emergency">9002058828</a>
+                <span class="emergency-bar__separator">|</span>
+                <a class="emergency-bar__number" href="tel:8293186488" aria-label="Call Emergency">8293186488</a>
+            </div>
+        </div>
+        <nav class="navbar" aria-label="Primary">
+            <img src="photos/logo.png" class="logo" alt="Life Care Nursing Home Logo" loading="lazy">
+            <div class="headertext"><h1>Life Care Nursing Home Muchipara</h1></div>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">
+                <span></span>
+            </button>
+            <div class="nav-overlay" id="nav-overlay"></div>
+            <div id="primary-navigation" class="nav-links">
+                <button class="nav-close" aria-label="Close navigation">
+                    <i class="fas fa-times"></i>
+                </button>
+                <a href="#home"><i class="fas fa-home"></i> Home</a>
+                <a href="#about"><i class="fas fa-info-circle"></i> About Us</a>
+                <a href="#departments"><i class="fas fa-building"></i> Departments</a>
+                <a href="#doctors"><i class="fas fa-user-md"></i> Doctors</a>
+                <a href="#services"><i class="fas fa-hospital"></i> Facilities</a>
+                <a href="#appointments"><i class="fas fa-calendar-check"></i> Appointments</a>
+                <a href="#gallery"><i class="fas fa-images"></i> Gallery</a>
+                <a href="#blog"><i class="fas fa-blog"></i> Health Blog</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="#" class="login-link" onclick="openLoginModal(); return false;"><i class="fas fa-sign-in-alt"></i> Login</a>
+            </div>
+        </nav>
+        <div class="topbar-actions" role="region" aria-label="Quick Actions">
+            <a href="tel:9002058828" class="icon-link" aria-label="Call us">
+                <img src="photos/call icon.png" class="call-icon" alt="Call Icon" loading="lazy">
+            </a>
+            <a href="https://wa.me/919002058828" target="_blank" rel="noopener" class="icon-link" aria-label="WhatsApp us">
+                <img src="photos/whatsapp-icon.webp" class="whatsapp-icon" alt="WhatsApp Icon" loading="lazy">
+            </a>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search Doctors & Services" aria-label="Search">
+                <button class="search-btn" onclick="performSearch()" aria-label="Search"><img src="photos/search icon.png" alt="Search" loading="lazy"></button>
+            </div>
+            <div class="quick-buttons">
+                <a href="tel:8293186488" class="btn btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+                <a href="#doctors" class="btn btn-outline"><i class="fas fa-user-md"></i> Find Doctor</a>
+                <a href="#appointments" class="btn btn-accent"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+                <a href="https://maps.google.com/?q=Muchipara+Shibpur+Road+Durgapur+713212" target="_blank" rel="noopener" class="btn btn-outline"><i class="fas fa-map-marker-alt"></i> Map</a>
+            </div>
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>  
+    
+    <section id="home" class="hero reveal-on-scroll">
+        <div class="slider-container">
+            <div class="slider-track">
+                <!-- Primary set of slides -->
+                <div class="slide"><div class="image-card">24/7 Emergency Care</div></div>
+                <div class="slide"><div class="image-card">Advanced Lab Tests</div></div>
+                <div class="slide"><div class="image-card">Senior Care Services</div></div>
+                <div class="slide"><div class="image-card">Modern Pharmacy</div></div>
+                <div class="slide"><div class="image-card">Pediatric Care</div></div>
+                <div class="slide"><div class="image-card">Cardiology</div></div>
+                <div class="slide"><div class="image-card">Dental Services</div></div>
+                <div class="slide"><div class="image-card">Physiotherapy</div></div>
+                <div class="slide"><div class="image-card">Neurology</div></div>
+                <div class="slide"><div class="image-card">Orthopedics</div></div>
+                <div class="slide"><div class="image-card">ICU Services</div></div>
+                <div class="slide"><div class="image-card">Diagnostics</div></div>
+                <!-- Clone for seamless loop -->
+                <div class="slide"><div class="image-card">24/7 Emergency Care</div></div>
+                <div class="slide"><div class="image-card">Advanced Lab Tests</div></div>
+                <div class="slide"><div class="image-card">Senior Care Services</div></div>
+                <div class="slide"><div class="image-card">Modern Pharmacy</div></div>
+                <div class="slide"><div class="image-card">Pediatric Care</div></div>
+                <div class="slide"><div class="image-card">Cardiology</div></div>
+                <div class="slide"><div class="image-card">Dental Services</div></div>
+                <div class="slide"><div class="image-card">Physiotherapy</div></div>
+                <div class="slide"><div class="image-card">Neurology</div></div>
+                <div class="slide"><div class="image-card">Orthopedics</div></div>
+                <div class="slide"><div class="image-card">ICU Services</div></div>
+                <div class="slide"><div class="image-card">Diagnostics</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero2 reveal-on-scroll">
+        <div class="hero2-content">
+            <img src="photos/hero2.png" alt="Life Care Nursing Home" class="hero2-image" loading="lazy">
+        </div>
+    </section>
+
+    <section id="intro" class="intro reveal-on-scroll">
+        <div class="container">
+            <h2 class="section-title">Compassionate Care, Advanced Facilities</h2>
+            <p class="lead">We are committed to delivering safe, high-quality, and patient-centric healthcare with modern diagnostics, 24×7 emergency, and experienced specialists at Muchipara, Durgapur.</p>
+            <div class="intro-highlights">
+                <div class="highlight-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Reliable & Trusted Medical Services</h3>
+                    <p>Prompt, compassionate response at every step</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-rupee-sign"></i>
+                    <h3>Affordable & Transparent Pricing</h3>
+                    <p>Quality healthcare accessible to all</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Personalised, Patient-Centric Care</h3>
+                    <p>In a world-class setup</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="counters reveal-on-scroll" aria-label="Hospital Statistics">
+        <div class="container counters__grid">
+            <div class="counter"><span data-count="120000" class="count">0</span><p>Patients Treated</p></div>
+            <div class="counter"><span data-count="75" class="count">0</span><p>Specialist Doctors</p></div>
+            <div class="counter"><span data-count="18" class="count">0</span><p>Years of Service</p></div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Life Care Nursing Home</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>To provide compassionate, high-quality healthcare services that are accessible, affordable, and patient-centered. We strive to be the most trusted healthcare provider in Durgapur.</p>
+                    
+                    <h3>Our Vision</h3>
+                    <p>To be recognized as a leading healthcare institution delivering world-class medical services with cutting-edge technology and a team of dedicated professionals.</p>
+                    
+                    <h3>Core Values</h3>
+                    <ul class="values-list">
+                        <li><i class="fas fa-check-circle"></i> Compassion & Care</li>
+                        <li><i class="fas fa-check-circle"></i> Excellence in Service</li>
+                        <li><i class="fas fa-check-circle"></i> Integrity & Trust</li>
+                        <li><i class="fas fa-check-circle"></i> Patient Safety First</li>
+                        <li><i class="fas fa-check-circle"></i> Continuous Innovation</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-hospital"></i>
+                        <h4>Modern Infrastructure</h4>
+                        <p>State-of-the-art facilities with advanced medical equipment</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-award"></i>
+                        <h4>Experienced Team</h4>
+                        <p>Highly qualified doctors from premier medical institutions</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>24/7 Emergency</h4>
+                        <p>Round-the-clock emergency and trauma care services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section id="departments" class="departments">
+        <div class="container">
+            <h2 class="section-title">Our Departments</h2>
+            <p class="section-subtitle">Comprehensive medical care across multiple specialties</p>
+            <div class="dept-grid reveal-on-scroll">
+                <div class="dept-card" onclick="filterDoctorsByDept('Urology')">
+                    <i class="fas fa-procedures"></i>
+                    <h3>Urology</h3>
+                    <p>Laparoscopic & advanced urological care</p>
+                </div>
+                <div class="dept-card" onclick="filterDoctorsByDept('General Surgery')">
+                    <i class="fas fa-user-md"></i>
+                    <h3>General Surgery</h3>
+                    <p>Laparoscopic & laser proctology</p>
+                </div>
+                <div class="dept-card" onclick="filterDoctorsByDept('Gynecology')">
+                    <i class="fas fa-female"></i>
+                    <h3>Gynecology & Obstetrics</h3>
+                    <p>Women's health & maternity care</p>
+                </div>
+                <div class="dept-card" onclick="filterDoctorsByDept('General Medicine')">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>General Medicine</h3>
+                    <p>Comprehensive medical consultation</p>
+                </div>
+                <div class="dept-card" onclick="filterDoctorsByDept('Orthopedics')">
+                    <i class="fas fa-bone"></i>
+                    <h3>Orthopedics</h3>
+                    <p>Bone, joint & spine care</p>
+                </div>
+                <div class="dept-card" onclick="filterDoctorsByDept('Pediatrics')">
+                    <i class="fas fa-baby"></i>
+                    <h3>Pediatrics</h3>
+                    <p>Child healthcare & vaccination</p>
+                </div>
+                <div class="dept-card" onclick="filterDoctorsByDept('Cardiology')">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Cardiology</h3>
+                    <p>Heart care & diagnostics</p>
+                </div>
+                <div class="dept-card" onclick="filterDoctorsByDept('Neurology')">
+                    <i class="fas fa-brain"></i>
+                    <h3>Neurology</h3>
+                    <p>Neurological disorders treatment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors-section">
+        <div class="container">
+            <h2 class="section-title">Our Expert Doctors</h2>
+            <p class="section-subtitle">Highly qualified specialists from premier medical institutions</p>
+            
+            <!-- Doctor Search & Filter -->
+            <div class="doctor-filters">
+                <input type="text" id="doctorSearch" placeholder="Search by name..." onkeyup="searchDoctors()">
+                <select id="deptFilter" onchange="filterDoctors()">
+                    <option value="all">All Departments</option>
+                    <option value="Urology">Urology</option>
+                    <option value="General Surgery">General Surgery</option>
+                    <option value="Gynecology">Gynecology & Obstetrics</option>
+                    <option value="General Medicine">General Medicine</option>
+                    <option value="Orthopedics">Orthopedics</option>
+                </select>
+                <select id="genderFilter" onchange="filterDoctors()">
+                    <option value="all">All Genders</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="doctors-grid reveal-on-scroll" id="doctorsGrid">
+                <!-- Dr. Ranvir Kumar Singh -->
+                <div class="doctor-card" data-dept="Urology" data-gender="Male" data-name="Dr. Ranvir Kumar Singh">
+                    <div class="doctor-image">
+                        <img src="photos/doctors/dr-ranvir-kumar-singh.jpg" alt="Dr. Ranvir Kumar Singh" loading="lazy">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Ranvir Kumar Singh</h3>
+                        <p class="doctor-qualification">MBBS, M.S., MCH (Urology)</p>
+                        <p class="doctor-specialty">Consultant Urologist & Laparoscopic Surgeon</p>
+                        <p class="doctor-experience">Ex Resident BJ Medical College, Ahmedabad</p>
+                        <div class="doctor-timing">
+                            <i class="fas fa-clock"></i>
+                            <span>Friday 12:30 PM</span>
+                        </div>
+                        <div class="doctor-actions">
+                            <button class="btn btn-primary" onclick="bookAppointment('Dr. Ranvir Kumar Singh')">
+                                <i class="fas fa-calendar-check"></i> Book Appointment
+                            </button>
+                            <button class="btn btn-outline" onclick="viewDoctorProfile('Dr. Ranvir Kumar Singh')">
+                                <i class="fas fa-user"></i> View Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Jiwesh Kr. Thakur -->
+                <div class="doctor-card" data-dept="General Surgery" data-gender="Male" data-name="Dr. Jiwesh Kr. Thakur">
+                    <div class="doctor-image">
+                        <img src="photos/doctors/dr-jiwesh-kr-thakur.jpg" alt="Dr. Jiwesh Kr. Thakur" loading="lazy">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Jiwesh Kr. Thakur</h3>
+                        <p class="doctor-qualification">M.B.B.S. M.S</p>
+                        <p class="doctor-specialty">General and Laparoscopic Surgeon<br>Specialist in Laser Proctology</p>
+                        <p class="doctor-experience">Ex Associate Professor of IQ City Medical College and Hospital</p>
+                        <div class="doctor-timing">
+                            <i class="fas fa-clock"></i>
+                            <span>Tuesday 6:30 PM</span>
+                        </div>
+                        <div class="doctor-actions">
+                            <button class="btn btn-primary" onclick="bookAppointment('Dr. Jiwesh Kr. Thakur')">
+                                <i class="fas fa-calendar-check"></i> Book Appointment
+                            </button>
+                            <button class="btn btn-outline" onclick="viewDoctorProfile('Dr. Jiwesh Kr. Thakur')">
+                                <i class="fas fa-user"></i> View Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Priyanka Roy -->
+                <div class="doctor-card" data-dept="Gynecology" data-gender="Female" data-name="Dr. Priyanka Roy">
+                    <div class="doctor-image">
+                        <img src="photos/doctors/dr-priyanka-roy.jpg" alt="Dr. Priyanka Roy" loading="lazy">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Priyanka Roy</h3>
+                        <p class="doctor-qualification">(MBBS, MS)</p>
+                        <p class="doctor-specialty">Consultant Gynaecologist and Obstetrician</p>
+                        <p class="doctor-experience">Attached with DSP Main Hospital</p>
+                        <div class="doctor-timing">
+                            <i class="fas fa-clock"></i>
+                            <span>Friday 09:00 AM</span>
+                        </div>
+                        <div class="doctor-actions">
+                            <button class="btn btn-primary" onclick="bookAppointment('Dr. Priyanka Roy')">
+                                <i class="fas fa-calendar-check"></i> Book Appointment
+                            </button>
+                            <button class="btn btn-outline" onclick="viewDoctorProfile('Dr. Priyanka Roy')">
+                                <i class="fas fa-user"></i> View Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Subham Das -->
+                <div class="doctor-card" data-dept="General Medicine" data-gender="Male" data-name="Dr. Subham Das">
+                    <div class="doctor-image">
+                        <img src="photos/doctors/dr-subham-das.jpg" alt="Dr. Subham Das" loading="lazy">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Subham Das</h3>
+                        <p class="doctor-qualification">(MBBS, MD)</p>
+                        <p class="doctor-specialty">General Medicine</p>
+                        <div class="doctor-timing">
+                            <i class="fas fa-clock"></i>
+                            <span>Thursday & Friday 8:00 PM</span>
+                        </div>
+                        <div class="doctor-actions">
+                            <button class="btn btn-primary" onclick="bookAppointment('Dr. Subham Das')">
+                                <i class="fas fa-calendar-check"></i> Book Appointment
+                            </button>
+                            <button class="btn btn-outline" onclick="viewDoctorProfile('Dr. Subham Das')">
+                                <i class="fas fa-user"></i> View Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Suman Ranjan Dutta -->
+                <div class="doctor-card" data-dept="Gynecology" data-gender="Male" data-name="Dr. Suman Ranjan Dutta">
+                    <div class="doctor-image">
+                        <img src="photos/doctors/dr-suman-ranjan-dutta.jpg" alt="Dr. Suman Ranjan Dutta" loading="lazy">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Suman Ranjan Dutta</h3>
+                        <p class="doctor-qualification">MBBS(CAL), DGO (CAL), M.S. (GYNAE & OBS)</p>
+                        <p class="doctor-specialty">Consultant Gynaecologist & Obstetrician</p>
+                        <p class="doctor-experience">Ex. Attached Bankura Samillani Medical College<br>Formaly Attached Onda Superspeciality Hospital</p>
+                        <div class="doctor-timing">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon, Tue, Wed, Thu, Sun: 11:30 AM</span>
+                        </div>
+                        <div class="doctor-actions">
+                            <button class="btn btn-primary" onclick="bookAppointment('Dr. Suman Ranjan Dutta')">
+                                <i class="fas fa-calendar-check"></i> Book Appointment
+                            </button>
+                            <button class="btn btn-outline" onclick="viewDoctorProfile('Dr. Suman Ranjan Dutta')">
+                                <i class="fas fa-user"></i> View Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Sougata Kr. Sarkar -->
+                <div class="doctor-card" data-dept="Gynecology" data-gender="Male" data-name="Dr. Sougata Kr. Sarkar">
+                    <div class="doctor-image">
+                        <img src="photos/doctors/dr-sougata-kr-sarkar.jpg" alt="Dr. Sougata Kr. Sarkar" loading="lazy">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Sougata Kr. Sarkar</h3>
+                        <p class="doctor-qualification">MBBS(HONS), MS (OBG), FMAS FIAOG, MRCOG (I) (UK)</p>
+                        <p class="doctor-specialty">Consultant Gynaecologist & Obstetrician<br>Specialist: Laparoscopic Surgery and Infertility</p>
+                        <p class="doctor-experience">Professor of Shantiniketan Medical College<br>Previous Attachment R G Kar Medical College<br>IQ City Medical College</p>
+                        <div class="doctor-timing">
+                            <i class="fas fa-clock"></i>
+                            <span>Wednesday: 8:30 PM | Saturday: 5:30 PM</span>
+                        </div>
+                        <div class="doctor-actions">
+                            <button class="btn btn-primary" onclick="bookAppointment('Dr. Sougata Kr. Sarkar')">
+                                <i class="fas fa-calendar-check"></i> Book Appointment
+                            </button>
+                            <button class="btn btn-outline" onclick="viewDoctorProfile('Dr. Sougata Kr. Sarkar')">
+                                <i class="fas fa-user"></i> View Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Bikash Ch. Mondal -->
+                <div class="doctor-card" data-dept="Orthopedics" data-gender="Male" data-name="Dr. Bikash Ch. Mondal">
+                    <div class="doctor-image">
+                        <img src="photos/doctors/dr-bikash-ch-mondal.jpg" alt="Dr. Bikash Ch. Mondal" loading="lazy">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Bikash Ch. Mondal</h3>
+                        <p class="doctor-qualification">Orthopaedic (MBBS, MS)</p>
+                        <p class="doctor-experience">Ex Assistant Professor IQ City Medical College<br>Formally Attached with Gauri Devi Medical College</p>
+                        <div class="doctor-timing">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon, Wed, Thu, Sat: 10:30 AM</span>
+                        </div>
+                        <div class="doctor-actions">
+                            <button class="btn btn-primary" onclick="bookAppointment('Dr. Bikash Ch. Mondal')">
+                                <i class="fas fa-calendar-check"></i> Book Appointment
+                            </button>
+                            <button class="btn btn-outline" onclick="viewDoctorProfile('Dr. Bikash Ch. Mondal')">
+                                <i class="fas fa-user"></i> View Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities & Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Facilities & Services</h2>
+            <p class="section-subtitle">Comprehensive healthcare services under one roof</p>
+            <div class="services-grid reveal-on-scroll">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-ambulance"></i></div>
+                    <h3>24×7 Emergency & Trauma</h3>
+                    <p>Rapid response critical care with experienced emergency physicians available round the clock.</p>
+                    <a href="#contact" class="service-link">Contact Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-procedures"></i></div>
+                    <h3>Operation Theatre</h3>
+                    <p>Modern, sterile OT complex equipped with advanced surgical instruments and monitoring systems.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>ICU / NICU / BCU</h3>
+                    <p>Advanced intensive care units with 24/7 monitoring and life support systems.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-x-ray"></i></div>
+                    <h3>Diagnostic Imaging</h3>
+                    <p>X-ray, CT Scan, Ultrasound with latest technology for accurate diagnosis.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-flask"></i></div>
+                    <h3>Pathology & Laboratory</h3>
+                    <p>Comprehensive lab services with quick turnaround time and accurate results.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-pills"></i></div>
+                    <h3>24×7 Pharmacy</h3>
+                    <p>In-house pharmacy stocked with all essential medicines available round the clock.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-truck-medical"></i></div>
+                    <h3>Ambulance Service</h3>
+                    <p>Well-equipped ambulances with trained paramedics for emergency transport.</p>
+                    <a href="tel:8293186488" class="service-link">Call: 8293186488 <i class="fas fa-phone"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-bed"></i></div>
+                    <h3>Room Facilities</h3>
+                    <p>Comfortable AC/Non-AC rooms with modern amenities for patient comfort.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-utensils"></i></div>
+                    <h3>Cafeteria & Parking</h3>
+                    <p>On-site cafeteria and ample parking space for visitors and patients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointments Section -->
+    <section id="appointments" class="appointments-section">
+        <div class="container">
+            <h2 class="section-title">Book an Appointment</h2>
+            <p class="section-subtitle">Schedule your visit with our expert doctors</p>
+            <div class="appointment-container">
+                <form id="appointmentForm" class="appointment-form" onsubmit="submitAppointment(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="patientName"><i class="fas fa-user"></i> Full Name *</label>
+                            <input type="text" id="patientName" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="patientPhone"><i class="fas fa-phone"></i> Phone Number *</label>
+                            <input type="tel" id="patientPhone" required placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="patientEmail"><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" id="patientEmail" placeholder="Enter your email (optional)">
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentDoctor"><i class="fas fa-user-md"></i> Select Doctor *</label>
+                            <select id="appointmentDoctor" required>
+                                <option value="">Choose a doctor</option>
+                                <option value="Dr. Ranvir Kumar Singh">Dr. Ranvir Kumar Singh - Urology</option>
+                                <option value="Dr. Jiwesh Kr. Thakur">Dr. Jiwesh Kr. Thakur - General Surgery</option>
+                                <option value="Dr. Priyanka Roy">Dr. Priyanka Roy - Gynecology</option>
+                                <option value="Dr. Subham Das">Dr. Subham Das - General Medicine</option>
+                                <option value="Dr. Suman Ranjan Dutta">Dr. Suman Ranjan Dutta - Gynecology</option>
+                                <option value="Dr. Sougata Kr. Sarkar">Dr. Sougata Kr. Sarkar - Gynecology</option>
+                                <option value="Dr. Bikash Ch. Mondal">Dr. Bikash Ch. Mondal - Orthopedics</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="appointmentDate"><i class="fas fa-calendar"></i> Preferred Date *</label>
+                            <input type="date" id="appointmentDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentTime"><i class="fas fa-clock"></i> Preferred Time *</label>
+                            <input type="time" id="appointmentTime" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="appointmentIssue"><i class="fas fa-notes-medical"></i> Health Issue / Reason for Visit *</label>
+                        <textarea id="appointmentIssue" required rows="4" placeholder="Briefly describe your health concern"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-calendar-check"></i> Book Appointment
+                        </button>
+                        <button type="button" class="btn btn-outline" onclick="emergencyConsultation()">
+                            <i class="fas fa-phone-alt"></i> Emergency Consultation
+                        </button>
+                    </div>
+                </form>
+                <div class="appointment-info">
+                    <div class="info-card">
+                        <i class="fas fa-phone-volume"></i>
+                        <h3>Call for Booking</h3>
+                        <p><a href="tel:8293186488">8293186488</a></p>
+                        <p><a href="tel:9002058828">9002058828</a></p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Working Hours</h3>
+                        <p>24/7 Emergency Services</p>
+                        <p>OPD: 9:00 AM - 8:00 PM</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Muchipara (Shibpur Road)</p>
+                        <p>Durgapur - 713212</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">Take a virtual tour of our facilities</p>
+            <div class="gallery-tabs">
+                <button class="gallery-tab active" onclick="showGalleryTab('photos')">Photos</button>
+                <button class="gallery-tab" onclick="showGalleryTab('videos')">Videos</button>
+            </div>
+            <div id="photosGallery" class="gallery-grid reveal-on-scroll">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="photos/gallery/hospital-facility.jpg" alt="Hospital Facility" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="photos/gallery/operation-theatre.jpg" alt="Operation Theatre" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="photos/gallery/icu-ward.jpg" alt="ICU Ward" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="photos/gallery/reception-area.jpg" alt="Reception Area" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+            <div id="videosGallery" class="gallery-grid" style="display: none;">
+                <p class="text-center">Video content coming soon...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Health Blog & Articles</h2>
+            <p class="section-subtitle">Stay informed with health tips and medical insights</p>
+            <div class="blog-grid reveal-on-scroll">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="photos/blog/healthy-heart-article.jpg" alt="Health Article" loading="lazy">
+                        <span class="blog-category">Preventive Care</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>10 Tips for a Healthy Heart</h3>
+                        <p class="blog-meta"><i class="fas fa-calendar"></i> Nov 10, 2025 | <i class="fas fa-user"></i> Dr. Subham Das</p>
+                        <p>Learn essential tips to maintain cardiovascular health and prevent heart diseases...</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="photos/blog/pregnancy-care-article.jpg" alt="Health Article" loading="lazy">
+                        <span class="blog-category">Women's Health</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Pregnancy Care: What to Expect</h3>
+                        <p class="blog-meta"><i class="fas fa-calendar"></i> Nov 8, 2025 | <i class="fas fa-user"></i> Dr. Priyanka Roy</p>
+                        <p>A comprehensive guide for expectant mothers on prenatal care and nutrition...</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="photos/blog/joint-pain-article.jpg" alt="Health Article" loading="lazy">
+                        <span class="blog-category">Orthopedics</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Managing Joint Pain Effectively</h3>
+                        <p class="blog-meta"><i class="fas fa-calendar"></i> Nov 5, 2025 | <i class="fas fa-user"></i> Dr. Bikash Ch. Mondal</p>
+                        <p>Expert advice on dealing with arthritis and joint-related issues...</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Reviews Section -->
+    <section id="testimonials" class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">Patient Reviews & Testimonials</h2>
+            <p class="section-subtitle">What our patients say about us</p>
+            <div class="reviews-grid reveal-on-scroll">
+                <div class="review-card">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Exceptional care and friendly staff. Dr. Ranvir Kumar Singh is highly professional and caring. The facilities are top-notch."</p>
+                    <div class="review-author">
+                        <strong>Amit Sharma</strong>
+                        <span>Patient</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Quick emergency response saved my father's life. The 24/7 emergency team is highly efficient and compassionate."</p>
+                    <div class="review-author">
+                        <strong>Rahul Khan</strong>
+                        <span>Patient's Family</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Clean facilities and expert doctors. Dr. Priyanka Roy provided excellent care during my pregnancy. Highly recommended!"</p>
+                    <div class="review-author">
+                        <strong>Sneha Roy</strong>
+                        <span>Patient</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-action">
+                <button class="btn btn-primary" onclick="openReviewModal()">
+                    <i class="fas fa-star"></i> Write a Review
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in touch with us for any queries or assistance</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>Muchipara (Shibpur Road)<br>Durgapur - 713212<br>West Bengal, India</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p><a href="tel:9002058828">9002058828</a></p>
+                        <p><a href="tel:8293186488">8293186488</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@lifecarenursinghome.com">info@lifecarenursinghome.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Working Hours</h3>
+                        <p>24/7 Emergency Services</p>
+                        <p>OPD: 9:00 AM - 8:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.234567890123!2d87.31234567890123!3d23.54321098765432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMyJzM1LjYiTiA4N8KwMTgnNDQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer__grid">
+            <div class="footer-col">
+                <h4>Life Care Nursing Home Muchipara</h4>
+                <p>Providing compassionate, high-quality healthcare services to the community of Durgapur and surrounding areas.</p>
+                <p><strong>Address:</strong> Muchipara (Shibpur Road), Durgapur - 713212</p>
+                <p><strong>Phone:</strong> <a href="tel:9002058828">9002058828</a> | <a href="tel:8293186488">8293186488</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@lifecarenursinghome.com">info@lifecarenursinghome.com</a></p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#services">Facilities</a></li>
+                    <li><a href="#appointments">Appointments</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#services">24/7 Emergency</a></li>
+                    <li><a href="#services">Operation Theatre</a></li>
+                    <li><a href="#services">ICU/NICU/BCU</a></li>
+                    <li><a href="#services">Diagnostics</a></li>
+                    <li><a href="#services">Pharmacy</a></li>
+                    <li><a href="#services">Ambulance</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>More</h4>
+                <ul class="footer-links">
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#blog">Health Blog</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© <span id="year"></span> Life Care Nursing Home Muchipara. All rights reserved. | Designed with care for better health</p>
+        </div>
+    </footer>
+
+    <a href="tel:9002058828" class="floating-emergency" aria-label="Emergency Call Now">
+        <i class="fas fa-phone-alt"></i> Emergency
+    </a>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeLoginModal()">&times;</span>
+            <h2>Login / Register</h2>
+            <div class="login-tabs">
+                <button class="login-tab active" onclick="showLoginTab('login')">Login</button>
+                <button class="login-tab" onclick="showLoginTab('register')">Register</button>
+            </div>
+            <div id="loginForm" class="login-form-container">
+                <form onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" required placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    <div class="divider">OR</div>
+                    <button type="button" class="btn btn-google btn-block" onclick="googleLogin()">
+                        <i class="fab fa-google"></i> Sign in with Google
+                    </button>
+                </form>
+            </div>
+            <div id="registerForm" class="login-form-container" style="display: none;">
+                <form onsubmit="handleRegister(event)">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" required placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label>Role</label>
+                        <select required>
+                            <option value="">Select your role</option>
+                            <option value="patient">Patient</option>
+                            <option value="doctor">Doctor (Requires Admin Approval)</option>
+                            <option value="nurse">Nurse (Requires Admin Approval)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" required placeholder="Create a password">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    <div class="divider">OR</div>
+                    <button type="button" class="btn btn-google btn-block" onclick="googleLogin()">
+                        <i class="fab fa-google"></i> Sign up with Google
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Modal -->
+    <div id="reviewModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeReviewModal()">&times;</span>
+            <h2>Write a Review</h2>
+            <form onsubmit="submitReview(event)" class="review-form">
+                <div class="form-group">
+                    <label>Your Name *</label>
+                    <input type="text" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label>Rating *</label>
+                    <div class="star-rating">
+                        <i class="far fa-star" onclick="setRating(1)"></i>
+                        <i class="far fa-star" onclick="setRating(2)"></i>
+                        <i class="far fa-star" onclick="setRating(3)"></i>
+                        <i class="far fa-star" onclick="setRating(4)"></i>
+                        <i class="far fa-star" onclick="setRating(5)"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Your Review *</label>
+                    <textarea required rows="5" placeholder="Share your experience with us"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Review</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- AI Chatbot -->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header" onclick="toggleChatbot()">
+            <i class="fas fa-robot"></i>
+            <span>Healthcare Assistant</span>
+            <i class="fas fa-chevron-down chatbot-toggle-icon"></i>
+        </div>
+        <div class="chatbot-body" style="display: none;">
+            <div class="chatbot-messages" id="chatMessages">
+                <div class="bot-message">Hello! I'm your healthcare assistant. How can I help you today?</div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatInput" placeholder="Type your question..." onkeypress="handleChatKeypress(event)">
+                <button onclick="sendChatMessage()"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
