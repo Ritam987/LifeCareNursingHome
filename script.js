@@ -13,7 +13,7 @@ function initializeApp() {
     setupCounters();
     setupSearch();
     setupTheme();
-    setupChatbot();
+    setupScrollToTop();
     setCurrentYear();
     setupDateInput();
     setupImagePlaceholders();
@@ -429,13 +429,7 @@ function updateThemeIcon() {
     }
 }
 
-// ===== CHATBOT =====
-function setupChatbot() {
-    const chatInput = document.getElementById('chatInput');
-    if (chatInput) {
-        chatInput.addEventListener('keypress', handleChatKeypress);
-    }
-}
+
 
 // ===== SCROLL REVEAL =====
 function setupScrollReveal() {
@@ -460,71 +454,39 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(setupScrollReveal, 120);
 });
 
-function toggleChatbot() {
-    const chatbotBody = document.querySelector('.chatbot-body');
-    const toggleIcon = document.querySelector('.chatbot-toggle-icon');
-    
-    if (chatbotBody) {
-        const isVisible = chatbotBody.style.display === 'flex';
-        chatbotBody.style.display = isVisible ? 'none' : 'flex';
-        if (toggleIcon) {
-            toggleIcon.style.transform = isVisible ? 'rotate(0deg)' : 'rotate(180deg)';
+// ===== SCROLL TO TOP =====
+function setupScrollToTop() {
+    const btn = document.getElementById('scrollToTopBtn');
+    if (!btn) return;
+
+    // Show/hide after 200px
+    function checkScroll() {
+        if (window.pageYOffset > 200) {
+            btn.classList.add('visible');
+        } else {
+            btn.classList.remove('visible');
         }
     }
+
+    // Smooth scroll to top
+    btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        try {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } catch (err) {
+            // Fallback for very old browsers
+            window.scrollTo(0, 0);
+        }
+    });
+
+    // Passive scroll listener
+    window.addEventListener('scroll', checkScroll, { passive: true });
+
+    // Initial check in case page is already scrolled
+    checkScroll();
 }
 
-function handleChatKeypress(event) {
-    if (event.key === 'Enter') {
-        sendChatMessage();
-    }
-}
 
-function sendChatMessage() {
-    const chatInput = document.getElementById('chatInput');
-    const chatMessages = document.getElementById('chatMessages');
-    
-    if (!chatInput || !chatMessages) return;
-    
-    const message = chatInput.value.trim();
-    if (!message) return;
-    
-    // Add user message
-    const userMsg = document.createElement('div');
-    userMsg.className = 'user-message';
-    userMsg.textContent = message;
-    chatMessages.appendChild(userMsg);
-    
-    chatInput.value = '';
-    
-    // Simulate bot response
-    setTimeout(() => {
-        const botMsg = document.createElement('div');
-        botMsg.className = 'bot-message';
-        botMsg.textContent = getBotResponse(message);
-        chatMessages.appendChild(botMsg);
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-    }, 1000);
-    
-    chatMessages.scrollTop = chatMessages.scrollHeight;
-}
-
-function getBotResponse(message) {
-    const msg = message.toLowerCase();
-    
-    if (msg.includes('appointment') || msg.includes('book')) {
-        return 'You can book an appointment by calling 8293186488 or using our online booking form.';
-    } else if (msg.includes('emergency')) {
-        return 'For emergencies, please call 9002058828 immediately. We are available 24/7.';
-    } else if (msg.includes('doctor')) {
-        return 'We have expert doctors in Urology, Surgery, Gynecology, Medicine, and Orthopedics. Visit our Doctors section to learn more.';
-    } else if (msg.includes('location') || msg.includes('address')) {
-        return 'We are located at Muchipara (Shibpur Road), Durgapur - 713212.';
-    } else if (msg.includes('timing') || msg.includes('hours')) {
-        return 'OPD hours: 9:00 AM - 8:00 PM. Emergency services available 24/7.';
-    } else {
-        return 'Thank you for your message. For specific queries, please call us at 8293186488 or visit our Contact section.';
-    }
-}
 
 // ===== UTILITY FUNCTIONS =====
 function setCurrentYear() {

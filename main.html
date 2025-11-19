@@ -883,23 +883,15 @@
         </div>
     </div>
 
-    <!-- AI Chatbot -->
-    <div id="chatbot" class="chatbot">
-        <div class="chatbot-header" onclick="toggleChatbot()">
-            <i class="fas fa-robot"></i>
-            <span>Healthcare Assistant</span>
-            <i class="fas fa-chevron-down chatbot-toggle-icon"></i>
-        </div>
-        <div class="chatbot-body" style="display: none;">
-            <div class="chatbot-messages" id="chatMessages">
-                <div class="bot-message">Hello! I'm your healthcare assistant. How can I help you today?</div>
-            </div>
-            <div class="chatbot-input">
-                <input type="text" id="chatInput" placeholder="Type your question..." onkeypress="handleChatKeypress(event)">
-                <button onclick="sendChatMessage()"><i class="fas fa-paper-plane"></i></button>
-            </div>
-        </div>
-    </div>
+
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top" title="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 4L12 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 11L12 4L19 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
 
 </body>
 </html>
