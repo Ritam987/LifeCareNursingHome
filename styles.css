@@ -2559,6 +2559,52 @@ img {
     }
 }
 
+    /* ===== APPOINTMENT FORM - MOBILE RESPONSIVE ===== */
+    @media screen and (max-width: 768px) {
+        .appointment-container {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 0 16px;
+            box-sizing: border-box;
+        }
+
+        .appointment-form {
+            padding: 18px;
+            max-width: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr !important;
+            gap: 12px;
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .appointment-form .btn {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
 /* Ensure the scroll-to-top button does not overlap the floating emergency button
    by matching right offsets and increasing bottom gap on smaller screens. */
 @media screen and (max-width: 1023px) {
